@@ -12,11 +12,13 @@ close.addEventListener("click", function () {
 const featuresDropdown = document.querySelector(".dropdown-link1")
 const dropdownLInk1 = document.querySelector(".features-dropdown-content")
 featuresDropdown.addEventListener('click', function () {
-    dropdownLInk1.classList.toggle('open-menu1')
+    dropdownLInk1.classList.toggle('open-menu1');
+    dropdownLInk2.classList.remove('open-menu2');
 })
 
 const companyDropdown = document.querySelector(".dropdown-link2")
 const dropdownLInk2 = document.querySelector(".company-dropdown-content")
 companyDropdown.addEventListener('click', function () {
-    dropdownLInk2.classList.toggle('open-menu2')
+    dropdownLInk2.classList.toggle('open-menu2');
+    dropdownLInk1.classList.remove('open-menu1');
 })
